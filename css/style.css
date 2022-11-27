@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap');
+
+:root {
+    --main-color: #ee920e;
+    --second-color: #ffe3bd;
+    --fadein-duration: 1.2s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Tajawal', sans-serif;
+    height: 100vh;
+    background: url(/images/pexels-ahmed-aqtai-1073273.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    -webkit-background: url(/images/pexels-ahmed-aqtai-1073273.webp);
+    -webkit-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-clip: content-box;
+    -webkit-background-position: center;
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    font-size: 1.4rem;
+    direction: rtl;
+    margin-left: 50px;
+    margin-top: 30px;
+    -webkit-animation: fadeInLeft var(--fadein-duration) both;
+    -moz-animation: fadeInLeft var(--fadein-duration) both;
+    -o-animation: fadeInLeft var(--fadein-duration) both;
+    animation: fadeInLeft var(--fadein-duration) both;
+}
+
+.calling {
+    font-family: 'Kufam', sans-serif;
+    color: white;
+    transition: all 500ms;
+    border-bottom: 1px solid var(--second-color);
+}
+
+.container .days-left .number,
+.hours .hours-left,
+.minutes .minutes-left,
+.seconds .seconds-left {
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    margin: 5px;
+    color: var(--main-color);
+}
+
+.word {
+    color: white;
+}
+
+/* Sical icons */
+.social {
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    animation: fadeInUp var(--fadein-duration) both;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+
+.social i {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.social i:hover {
+    color: var(--second-color);
+    border-color: var(--main-color);
+}
+/* animation */
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+@-o-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -o-transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+@-o-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
